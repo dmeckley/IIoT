@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+/*
+	Filename: style.css
+
+	Author: Dustin Meckley
+	Date: 12/10/2018
+	Course: CITC1300-Beginning HTML and CSS Development
+	Assignment: Final Examination Website
+	Purpose: Style Cascading Style Sheet for the website	
+*/
+
+
+/*===============================================================*/
+/*                         Base Styles                           */
+/*===============================================================*/
+html {
+	background-color: ivory;
+}
+
+body {
+	margin: 5%;
+}
+
+header {
+	background: #4c4c4c;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+header img {
+	padding: 25px;
+	font-size: 4em;
+}
+
+header h1 {
+	text-shadow: white 2px 2px 1px,		
+				 blue 5px 5px 1px;
+	padding: 25px;
+	font-size: 4em;
+}
+
+nav ul {
+	display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul li {
+    width: 20%;
+ }
+
+nav ul li a {
+	background: #4c4c4c;
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 20px 2.5px; 
+}
+
+nav ul li a:link, nav ul li a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a:active {
+	background: rgb(180, 172, 172);
+	color: #4c4c4c;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+section.wrapper {
+	display: flex;
+}
+
+div.container {
+	flex: 1%;
+	background: linear-gradient(#4c4c4c, rgb(180, 172, 172), rgb(5, 5, 90));
+}
+
+article.container { 
+	flex: 78.5%;
+	padding: 5px;
+}
+
+#accordion div h2, #accordion div h3 {
+	margin: 2.5% auto;
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#accordion div h2 {
+	font-size: 2em;
+}
+
+#accordion div p {
+	margin: 2.5% 12.5%;
+	color: black;	
+}
+
+#accordion div ul {
+	margin: 2.5% 14%;
+}
+
+.centerImg {
+	margin: auto 9%;
+	text-align: center;
+}
+
+.intro {
+	text-align: center;
+}
+
+aside.container {
+	flex: 19.5%;
+	padding: 5px;
+	background: linear-gradient(#4c4c4c, rgb(180, 172, 172), rgb(5, 5, 90));
+}
+
+aside h2 {
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+	font-size: 2em;
+	padding-top: 20%;
+}
+
+aside a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;	
+}
+
+footer {
+	clear: both;
+	width: 100%; 
+	background: rgb(5, 5, 90);
+	color: white;
+	text-align: center;
+	padding: 25px 0;
+	line-height: 1.5em;
+}
+
+/*----------------------------------------------------*/
+/*                index.html Styles                   */
+/*----------------------------------------------------*/
+#accordion a {
+	text-decoration: none;
+	color: blue;
+}
+
+div.row {
+	clear: both;
+}
+
+div.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+div[class^="col-"] {
+	float: left;
+}
+
+div.col-1-2 {width: 50%;}
+
+figure {
+	display: table;
+	text-align: center;
+}
+
+figcaption {
+	display: table-caption;
+	caption-side: top;
+	font-weight: bolder;
+	color: blue;
+}
+
+#accordion p.formula {
+	text-align: center;
+	font-style: italic;
+	font-size: 1.25em;
+	color: blue;
+}
+
+/*----------------------------------------------------*/
+/*               ignition.html Styles                 */
+/*----------------------------------------------------*/
+ul#OPC {
+	padding-left: 28.5%;
+} 
+
+/*----------------------------------------------------*/
+/*                 mqtt.html Styles                   */
+/*----------------------------------------------------*/
+table {
+	margin: 2.5% 12.5%;
+	border: 10px solid #4c4c4c;
+}
+
+table td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#product {
+	width: 96%;
+}
+
+#tutorial {
+	text-align: center;	
+}
+
+/*----------------------------------------------------*/
+/*                 oee.html Styles                    */
+/*----------------------------------------------------*/
+
+
+/*----------------------------------------------------*/
+/*               contact.html Styles                  */
+/*----------------------------------------------------*/
+div[class^="col_inductive_"] {
+	float: left;
+	margin: 2.5% 5%;
+}
+
+.col_inductive_1 {
+	padding-top: 7.5%;
+}
+
+.col_inductive_1, .col_inductive_2 {
+	vertical-align: middle;
+}
+
+div[class^="col_cirrus-link_"] {
+	float: right;
+	margin: 2.5% 5%;
+}
+
+.col_cirrus-link_1 {
+	padding-top: 7.5%;
+}
+
+.col_cirrus-link_1, .col_cirrus-link_2 {
+	vertical-align: middle;
+}
+
+div[class^="col_sepasoft_"] {
+	float: left;
+	margin: 2.5% 5%;
+}
+
+.col_sepasoft_1 {
+	padding-top: 7.5%;
+}
+
+.col_sepasoft_1, .col_sepasoft_2 {
+	vertical-align: middle;
+}
+
+div.phone a, div.email a, div.website a {
+	color: blue;
+	text-decoration: none;
+}
+
+iframe {
+	vertical-align: middle;
+}
+  
+
+/*===============================================================*/
+/*                    Mobile Device Styles                       */
+/*===============================================================*/
+@media only screen and (max-width: 768px) {
+
+	header {
+		width: 100%;
+	}
+
+	header img {
+		display: none;
+	}
+	
+	header h1 {
+		font-size: 2em;
+	}
+
+	#IIOT_menu, #Ignition_menu, #MQTT_menu, #OEE_menu, #Contact_menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+
+	div.container {
+		flex: none;
+	}
+
+	article.container { 
+		flex: 100%;
+	}
+
+	article {
+		width: 100%;
+	}
+
+	#accordion div h2 {
+		font-size: 1em;
+	}
+
+	#accordion div h3 {
+		font-size: .75em;
+	}
+
+	#accordion div p {
+		font-size: .5em;
+		margin: 5% 0;
+	}
+
+	#accordion div ul {
+		margin: 5% 1em;
+		padding-left: 1em;
+		font-size: .5em;
+	}
+
+	.centerImg img {
+		max-width: 100%; 
+	}
+
+	#accordion div.centerImg img {
+		/* max-width: 100%;  */
+		display: none;
+	}
+	
+	.intro img, .intro iframe {
+		max-width: 100%;
+		height: auto;
+	}
+
+	aside {
+		display: none;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	div.col-1-2 {width: 100%;}
+
+	figcaption {
+		font-size: .5em;
+	}
+
+	#accordion p.formula {
+		font-size: .75em;
+	}
+
+	ul#OPC li {
+		margin: auto 25%;
+	} 
+
+	table {
+		margin: 5% auto;
+		border: 5px solid #4c4c4c;
+		font-size: .5em;
+	}
+
+	#accordion caption h3 {
+		font-size: 1.5em;
+	}
+
+	#tutorial {
+		display: none;
+	}
+	
+	#tutorial a {
+		text-decoration: none;
+	}
+
+	.col_inductive_1 {
+		font-size: .5em;
+		padding-left: 10%;
+	}
+
+	.col_cirrus-link_2 {
+		font-size: .5em;
+	}
+
+	.col_sepasoft_2 {
+		font-size: .5em;
+	}
+
+	div.phone a, div.email a, div.website a {
+		color: blue;
+		text-decoration: none;
+	}
+
+	iframe {
+		max-width: 100%;
+		height: auto;
+	}
+
+}

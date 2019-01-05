@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!--
+	Filename: contact.html
+
+	Author: Dustin Meckley
+	Date: 12/10/2018
+	Course: CITC1300-Beginning HTML and CSS Development
+	Assignment: Final Examination Website
+	Purpose: Contact page for the website	
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contacts</title>
+		<link href="images/favicons/contact_favicon.png" rel="shortcut icon" type="image/png" />
+		<link href="styles/reset.css" rel="stylesheet" />
+		<link href="styles/style.css" rel="stylesheet" />
+
+		<link href="dist/slicknav.css" rel="stylesheet" />
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="dist/jquery.slicknav.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function(){
+				$('#Contact_menu').slicknav();
+				$( "#accordion" ).accordion();
+			});
+		</script>
+    </head>
+
+    <body>
+		<header>
+			<img src="images/favicons/contact_favicon.png" alt="Contacts" />
+			<h1>Contact Us</h1>
+		</header>
+
+		<nav>
+			<ul id="Contact_menu">
+				<li><a href="index.html">IIOT</a></li>
+				<li><a href="ignition.html">Ignition</a></li>
+				<li><a href="mqtt.html">MQTT</a></li>
+				<li><a href="oee.html">OEE</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>
+		</nav>
+
+		<section class="wrapper">
+			<div class="container"></div>
+			<article class="container">
+				<div id="accordion">
+					<h1>Inductive Automation</h1>
+
+					<div>
+						<h2>Inductive Automation</h2>
+						<div class="row">
+							<div class="col_inductive_1">
+								<address>
+									Address:<br/>
+									90 Blue Ravine Road<br/>
+									Folsom, CA 95630<br/>
+									<div class="phone">
+										Call Us: <a href="tel:+1-800-266-7798">1-800-266-7798</a><br/>
+									</div>
+									<div class="email">
+										Sales: <a href="mailto:sales@inductiveautomation.com">sales@inductiveautomation.com</a><br/>
+										Support: <a href="mailto:support@inductiveautomation.com ">support@inductiveautomation.com </a><br/>
+										General: <a href="mailto:info@inductiveautomation.com">info@inductiveautomation.com</a><br/>
+										Jobs: <a href="mailto:jobs@inductiveautomation.com">jobs@inductiveautomation.com</a><br/>
+										Security: <a href="mailto:security@inductiveautomation.com">security@inductiveautomation.com</a><br/>
+									</div> 
+									<div class="website">
+										Website: <a href="https://www.inductiveautomation.com/">www.inductiveautomation.com</a>
+									</div>
+								</address>
+							</div>
+							<div class="col_inductive_2">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.850110597425!2d-121.19195424840876!3d38.6523266795092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ae690ed761089%3A0x2f6643f74bcae36!2sInductive+Automation!5e0!3m2!1sen!2sus!4v1543977666630" 
+								width="600" height="450" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+
+					<h1>Cirrus-Link</h1>
+					<div>
+						<h2>Cirrus-Link Solutions</h2>
+						<div class="row">
+							<div class="col_cirrus-link_1">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.7477189261804!2d-94.74236804840623!3d38.769489979490466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0b888fa3126e7%3A0xcc21b99fc2d903ad!2sCirrus+Link+Solutions!5e0!3m2!1sen!2sus!4v1543977763423" 
+								width="600" height="450" style="border:0" allowfullscreen></iframe>
+							</div>
+							<div class="col_cirrus-link_2">
+								<address>
+									Address:<br/>
+									19790 South Clearview Road<br/>
+									Bucyrus, KS 66013<br/>
+									<div class="phone">
+										Call Us: <a href="tel:+1-844-924-7787">1-844-924-7787</a><br/>
+									</div>
+									<div class="email">
+										Sales: <a href="mailto:sales@cirrus-link.com">sales@cirrus-link.com</a><br/>
+										Support: <a href="mailto:support@cirrus-link.com">support@cirrus-link.com</a><br/>
+									</div> 
+									<div class="website">
+										Website: <a href="https://www.cirrus-link.com/">www.cirrus-link.com</a>
+									</div>
+								</address>	
+							</div>
+						</div>
+					</div>
+					
+					<h1>SepaSoft</h1>
+					<div>
+						<h2>SepaSoft Solutions</h2>
+						<div class="row">
+							<div class="col_sepasoft_1">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12465.98854516784!2d-121.06514500000002!3d38.637448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809afaa7a7315c4f%3A0x6669d4b8c1a85127!2s1264+Hawks+Flight+Ct%2C+El+Dorado+Hills%2C+CA+95762!5e0!3m2!1sen!2sus!4v1543977826523" 
+								width="600" height="450" style="border:0" allowfullscreen></iframe>
+							</div>
+							<div class="col_sepasoft_2">
+								<address>
+									Address:<br/>
+									1264 Hawks Flight Court #250<br/>
+									El Dorado Hills, CA 95762<br/>
+									<div class="phone">
+										Call Us: <a href="tel:+1-800-207-5506">1-800-207-5506</a><br/>
+									</div>
+									<div class="email">
+										Sales: <a href="mailto:info@inductiveautomation.com">info@inductiveautomation.com</a><br/>
+										Jobs: <a href="mailto:jobs@sepasoft.com">jobs@sepasoft.com</a><br/>
+									</div> 
+									<div class="website">
+										Website: <a href="https://www.sepasoft.com/">www.sepasoft.com</a>
+									</div>
+								</address>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<aside class="container">
+				<h2>Product(s)</h2>
+				<div>
+					<a href="https://www.inductiveautomation.com/"><img src="images/website_links/inductive_automation.ico" alt="Inductive Automation" /></a>
+					<a href="https://www.cirrus-link.com/"><img src="images/website_links/cirrus-link.ico" alt="Cirrus-Link" /></a>
+					<a href="https://www.sepasoft.com/"><img src="images/website_links/sepasoft.ico" alt="SepaSoft" /></a>
+				</div>
+
+				<h2>Navigation(s)</h2>
+				<div>
+					<a href="index.html"><img src="images/favicons/iiot_favicon.ico" alt="IIOT" /></a>
+					<a href="ignition.html"><img src="images/favicons/ignition_favicon.ico" alt="Ignition" /></a>
+					<a href="mqtt.html"><img src="images/favicons/mqtt_favicon.ico" alt="MQTT" /></a>
+					<a href="oee.html"><img src="images/favicons/oee_favicon.ico" alt="OEE" /></a>
+				</div>
+			</aside>
+		</section>
+
+        <footer>
+            Copyright &copy; Inductive Automation 2018 <br />
+            Copyright &copy; SepaSoft 2018 <br />
+            Copyright &copy; Cirrus-Link 2018 <br />
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<!--
+	Filename: ignition.html
+
+	Author: Dustin Meckley
+	Date: 12/10/2018
+	Course: CITC1300-Beginning HTML and CSS Development
+	Assignment: Final Examination Website
+	Purpose: Ignition page for the website	
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ignition</title>
+		<link href="images/favicons/ignition_favicon.png" rel="shortcut icon" type="image/png" />
+		<link href="styles/reset.css" rel="stylesheet" />
+		<link href="styles/style.css" rel="stylesheet" />
+
+		<link href="dist/css/lightbox.css" rel="stylesheet" />
+		<link href="dist/slicknav.css" rel="stylesheet" />
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="dist/js/lightbox-plus-jquery.js"></script>
+		<script src="dist/jquery.slicknav.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function(){
+				$('#Ignition_menu').slicknav();
+				$( "#accordion" ).accordion();
+			});
+		</script>
+    </head>
+
+    <body>
+		<header>
+			<img src="images/favicons/ignition_favicon.png" alt="Ignition" />
+			<h1>Ignition</h1>
+		</header>
+		
+        <nav>
+			<ul id="Ignition_menu">
+				<li><a href="index.html">IIOT</a></li>
+				<li><a href="ignition.html">Ignition</a></li>
+				<li><a href="mqtt.html">MQTT</a></li>
+				<li><a href="oee.html">OEE</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>
+		</nav>
+
+		<section class="wrapper">
+			<div class="container"></div>
+			<article class="container">
+				<div id="accordion">
+					<h1>Ignition</h1>
+					<div>
+						<h2>Inductive Automation's Ignition Platform</h2>
+						<p>
+							Ignition by Inductive Automation is a SCADA/MES/HMI programming platform which 
+							interfaces industrial type machine controllers on the plant floor (OT) with 
+							the database engines (IT) for data retrieval and storage on the machine level. 
+						</p>
+
+						<div class="intro">
+							<a href="https://fast.wistia.net/embed/iframe/9oytrtod3i?popover=true&amp;wvideo=9oytrtod3i">
+							<img src="https://embedwistia-a.akamaihd.net/deliveries/2ff161a272e69e79aa2ddc3da359a528fc7709dd.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=7b796ae0" 
+							height="225" style="width: 400px; height: 225px;" alt = "Ignition"></a>
+						</div>
+
+						<h3>Connect, Design, Deploy Without Limits!</h3>
+						<p>
+							Ignition is unlimited, so for the low cost of one server license you can 
+							seamlessly connect all your data, design any kind of industrial application 
+							with ease, and instantly web-deploy unlimited clients to anyone, anywhere 
+							— all from one universal platform for industrial automation.
+						</p>
+
+						<h3>Connect</h3>
+						<p>
+							Ignition is server software that acts as the hub for everything on your plant 
+							floor for total system integration. No matter what brand, model, or platform, 
+							it talks to your plant-floor equipment just as naturally as it talks to SQL 
+							databases, seamlessly bridging the gap between production and IT.
+						</p>
+
+						<h3>Design</h3>
+						<p>
+							Ignition comes with everything you need to create any kind of industrial application. 
+							The included Ignition Designer combines a rich component library, easy data-binding, 
+							as well as powerful tools for drawing and scripting, into one fully-integrated 
+							development environment.
+						</p>
+
+						<h3>Unlimited Designers Included</h3>
+						<p>
+							Ignition comes standard with an unlimited number of concurrent Ignition 
+							Designers at no extra cost.
+						</p>
+
+						<h3>Unlimited Tags and Connections</h3>
+						<p>
+							For one insanely low price, connect to all the data tags, PLCs, databases, 
+							and devices you need.
+						</p>
+
+						<h3>Combining IT and Process Technology</h3>
+						<p>
+							Ignition is totally cross-platform and built upon trusted open technologies 
+							like Java, SQL, Python, and OPC UA.
+						</p>
+					</div>
+			
+					<h1>Ignition Modules</h1>
+					<div>
+						<h2>Fully Integrated Software Modules</h2>
+						<p>
+							Ignition has a full range of software modules to develop virtually any 
+							kind of industrial application.
+						</p>
+
+						<div class="centerImg">
+							<a href="images/iiot_modules/alarm_notification.png" data-lightbox="Inductive Automation Ignition Modules" data-title="Alarm Notification Module">
+								<img src="images/iiot_modules/thumbnails/alarm_notification_tn.jpg" alt="Alarm Notification Module" /></a>
+							
+							<a href="images/iiot_modules/enterprise_administration.png" data-lightbox="Inductive Automation Ignition Modules" data-title="Enterprise Administration Module">
+								<img src="images/iiot_modules/thumbnails/enterprise_administration_tn.jpg" alt="Enterprise Administration Module" /></a>
+							
+							<a href="images/iiot_modules/mobile.png" data-lightbox="Inductive Automation Ignition Modules" data-title="Mobile Module">
+								<img src="images/iiot_modules/thumbnails/mobile_tn.jpg" alt="Mobile Module" /></a>
+
+							<a href="images/iiot_modules/opc_ua_drivers.png" data-lightbox="Inductive Automation Ignition Modules" data-title="OPC UA Drivers Module">
+								<img src="images/iiot_modules/thumbnails/opc_ua_drivers_tn.jpg" alt="OPC UA Drivers Module" /></a>
+
+							<a href="images/iiot_modules/opc_ua.png" data-lightbox="Inductive Automation Ignition Modules" data-title="OPC UA Module">
+								<img src="images/iiot_modules/thumbnails/opc_ua_tn.jpg" alt="OPC UA Module" /></a>
+
+							<a href="images/iiot_modules/reporting.png" data-lightbox="Inductive Automation Ignition Modules" data-title="Reporting Module">
+								<img src="images/iiot_modules/thumbnails/reporting_tn.jpg" alt="Reporting Module" /></a>
+
+							<a href="images/iiot_modules/sql_bridge.png" data-lightbox="Inductive Automation Ignition Modules" data-title="SQL Bridge Module">
+								<img src="images/iiot_modules/thumbnails/sql_bridge_tn.jpg" alt="SQL Bridge Module" /></a>
+
+							<a href="images/iiot_modules/tag_historian.png" data-lightbox="Inductive Automation Ignition Modules" data-title="Tag Historian Module">
+								<img src="images/iiot_modules/thumbnails/tag_historian_tn.jpg" alt="Tag Historian Module" /></a>
+
+							<a href="images/iiot_modules/vision.png" data-lightbox="Inductive Automation Ignition Modules" data-title="Vision Module">
+								<img src="images/iiot_modules/thumbnails/vision_tn.jpg" alt="Vision Module" /></a>
+						</div>
+
+						<h3>Alarm Notification Module</h3>
+						<p>
+							Configure the logic for how, why, and when alarm notifications are delivered, manage alarm notification for groups of users, 
+							and send notifications via email.
+						</p>
+
+						<h3>Enterprise Administration Module</h3>
+						<p>
+							The EAM provides a secure and intuitive way to manage many Ignition installations from one location.
+						</p>
+
+						<h3>Mobile Module</h3>
+						<p>
+							Get mobile access to your control system via smartphones and tablets.
+						</p>
+
+						<h3>OPC UA Drivers Module</h3>
+						<ul id="OPC">
+							<li>Modbus Driver</li>
+							<li>UDP and TCP Drivers Module</li>
+							<li>Allen-Bradley Driver Suite</li>
+							<li>Siemens Driver</li>
+							<li>DNP3 Realtime Driver</li>
+							<li>Omron Driver</li>
+						</ul>
+
+						<h3>OPC UA Module</h3>
+						<p>
+							Connect to most major programmable logic controllers (PLCs) with the Ignition OPC UA Module. 
+							This module serves as a totally cross-platform OPC UA server with an open, pluggable driver system.
+						</p>
+
+						<h3>Reporting Module</h3>
+						<p>
+							Create dynamic, database-driven PDF reports with pixel-perfect layout — with ease.
+						</p>
+
+						<h3>SQL Bridge Module</h3>
+						<p>
+							Easily bridge the gap between OPC data and SQL databases with the industry's most flexible and powerful transaction manager. 
+							Easily log data, call stored procedures, and synchronize data bi-directionally.
+						</p>
+
+						<h3>Tag Historian Module</h3>
+						<p>
+							Turn a SQL database into a high-performance time-series tag historian.
+						</p>
+
+						<h3>Vision Module</h3>
+						<p>
+							Use this module to launch an unlimited number of powerful Ignition Vision clients anywhere on the network. Display charts, 
+							graphs, trends, HMI screens, and more.
+						</p>
+
+						<div class="centerImg">
+							<img src="images/website_links/inductive_automation.png" alt="Inductive Automation" />
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<aside class="container">
+				<h2>Product(s)</h2>
+				<div>
+					<a href="https://www.inductiveautomation.com/"><img src="images/website_links/inductive_automation.ico" alt="Inductive Automation" /></a>
+				</div>
+
+				<h2>Navigation(s)</h2>
+				<div>
+					<a href="index.html"><img src="images/favicons/iiot_favicon.ico" alt="IIOT" /></a>
+					<a href="mqtt.html"><img src="images/favicons/mqtt_favicon.ico" alt="MQTT" /></a>
+					<a href="oee.html"><img src="images/favicons/oee_favicon.ico" alt="OEE" /></a>
+					<a href="contact.html"><img src="images/favicons/contact_favicon.ico" alt="Contacts" /></a>
+				</div>
+			</aside>
+		</section>
+		<footer>Copyright &copy; Inductive Automation 2018</footer>
+    </body>
+</html>

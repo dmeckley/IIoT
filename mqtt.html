@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<!--
+	Filename: mqtt.html
+
+	Author: Dustin Meckley
+	Date: 12/10/2018
+	Course: CITC1300-Beginning HTML and CSS Development
+	Assignment: Final Examination Website
+	Purpose: MQTT page for the website	
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MQTT</title>
+		<link href="images/favicons/mqtt_favicon.png" rel="shortcut icon" type="image/png" />
+		<link href="styles/reset.css" rel="stylesheet" />
+		<link href="styles/style.css" rel="stylesheet" />
+
+		<link href="dist/css/lightbox.css" rel="stylesheet" />
+		<link href="dist/slicknav.css" rel="stylesheet" />
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="dist/js/lightbox-plus-jquery.js"></script>
+		<script src="dist/jquery.slicknav.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function(){
+				$('#MQTT_menu').slicknav();
+				$( "#accordion" ).accordion();
+			});
+		</script>
+    </head>
+
+    <body>
+		<header>
+			<img src="images/favicons/mqtt_favicon.png" alt="MQTT" />
+			<h1>MQTT</h1>
+		</header>
+			
+		<nav>
+			<ul id="MQTT_menu">
+				<li><a href="index.html">IIOT</a></li>
+				<li><a href="ignition.html">Ignition</a></li>
+				<li><a href="mqtt.html">MQTT</a></li>
+				<li><a href="oee.html">OEE</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>
+		</nav>
+
+		<section class="wrapper">
+			<div class="container"></div>
+			<article class="container">
+				<div id="accordion">
+					<h1>MQTT</h1>
+					<div>
+						<h2>Cirrus-Link's MQTT Platform</h2>
+						<p>
+							Ignition Edge MQTT by Cirrus Link is software that turns virtually any embedded 
+							PC or field device, such as an industrial PC or even a Raspberry Pi, into a 
+							lightweight, MQTT-enabled, edge gateway¹ that works seamlessly with Ignition 
+							IIoT and Sparkplug enabled applications.  It is an affordable, lightweight, 
+							limited version of Ignition with its tools and environment supplied with the 
+							MQTT Transmission Module targeted for the edge providing the connectivity to data
+							from PLCs, RTUs and other sensors.  
+						</p>
+
+						<div class="intro">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/HOh96DKZHHY"  
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<h3>IIoT Edge MQTT Broker</h3>
+						<p>
+							IIoT Edge MQTT uses the highly efficient MQTT protocol to transmit data to 
+							any MQTT broker and supports the open source Sparkplug data-encoding topic and 
+							payload specification.  
+						</p>
+
+						<h3>Ignition Edge Gateway Software</h3>
+						<p>
+							Ignition Edge MQTT turns any device, touch panel, rack-mount server, or client 
+							terminal, into an edge gateway, with unlimited tag support. Edge MQTT converts 
+							data from connected PLCs and RTUs into MQTT and publishes it to an MQTT broker 
+							in a way that can be easily received by the MQTT Engine Module. 
+						</p>
+
+						<h3>The Benefits of Ignition Edge:</h3>
+						<ul>
+							<li>Multi-functional: Use as a local HMI, Agent Gateway or an Edge Gateway</li>
+							<li>Affordable: Priced to use in bulk, without breaking the bank</li>
+							<li>Easy to install: Installs on virtually any industrial device</li>
+							<li>Built on trusted IT standards: Java, OPC-UA, MQTT</li>
+							<li>Ideal for OEMs: Embed features such as HMIs, alarming, OPC-UA, 
+								with unlimited tags and up to one week of data history.</li>
+							<li>Industry-leading support: The industry’s best tech support and training</li>
+						</ul>
+
+						<table>
+							<caption><h3>Pricing</h3></caption>
+
+							<colgroup>
+								<col id="product" />
+								<col class="cost" />
+							</colgroup> 
+
+							<tr>
+								<td>Ignition Edge Enterprise</td>
+								<td>$500</td>
+							</tr>
+							<tr>
+								<td>Ignition Edge MQTT by Cirrus Link</td>
+								<td> $800</td>
+							</tr>
+							<tr>
+								<td>Ignition Edge Panel</td>
+								<td>$1500</td>
+							</tr>
+						</table>
+
+						<div id="tutorial">
+							<a  href="https://docs.chariot.io/#all-updates">Tutorials</a>
+						</div>
+					</div>
+					
+					<h1>MQTT Modules</h1>
+					<div>
+						<h2>Cirrus-Link MQTT Modules</h2>
+						<p>
+							With the Cirrus Link IIoT Modules, you can set up a secure MQTT message-oriented middleware infrastructure that increases data availability.
+						</p>
+
+						<div class="centerImg">
+							<a href="images/mqtt_modules/aws_injector.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="AWS Injector Module">
+								<img src="images/mqtt_modules/thumbnails/aws_injector_tn.jpg" alt="AWS Injector Module" /></a>
+	
+							<a href="images/mqtt_modules/azure_injector.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="Azure Injector Module">
+								<img src="images/mqtt_modules/thumbnails/azure_injector_tn.jpg" alt="Azure Injector Module" /></a>
+	
+							<a href="images/mqtt_modules/efm_emerson_roc.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="EFM Emerson ROC Module">
+								<img src="images/mqtt_modules/thumbnails/efm_emerson_roc_tn.jpg" alt="EFM Emerson ROC Module" /></a>
+	
+							<a href="images/mqtt_modules/mqtt_distributor.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="MQTT Distributor Module">
+								<img src="images/mqtt_modules/thumbnails/mqtt_distributor_tn.jpg" alt="MQTT Distributor Module" /></a>
+	
+							<a href="images/mqtt_modules/mqtt_engine.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="MQTT Engine Module">
+								<img src="images/mqtt_modules/thumbnails/mqtt_engine_tn.jpg" alt="MQTT Engine Module" /></a>
+	
+							<a href="images/mqtt_modules/mqtt_recorder.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="MQTT Recorder Module">
+								<img src="images/mqtt_modules/thumbnails/mqtt_recorder_tn.jpg" alt="MQTT Recorder Module" /></a>
+	
+							<a href="images/mqtt_modules/mqtt_remote_agent.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="MQTT Remote Agent Module">
+								<img src="images/mqtt_modules/thumbnails/mqtt_remote_agent_tn.jpg" alt="MQTT Remote Agent Module" /></a>
+	
+							<a href="images/mqtt_modules/mqtt_remote_manager.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="MQTT Remote Manager Module">
+								<img src="images/mqtt_modules/thumbnails/mqtt_remote_manager_tn.jpg" alt="MQTT Remote Manager Module" /></a>
+	
+							<a href="images/mqtt_modules/mqtt_transmission.png" data-lightbox="Cirrus-Link MQTT Modules" data-title="MQTT Transmission Module">
+								<img src="images/mqtt_modules/thumbnails/mqtt_transmission_tn.jpg" alt="MQTT Transmission Module" /></a>
+						</div>
+
+						<h3>AWS Injector Module</h3>
+						<p>
+							The AWS Injector module enables end users of Ignition to select tag data from the Ignition platform to be sent into the 
+							Amazon Web Services (AWS) cloud infrastructure for analytics.
+						</p>
+
+						<h3>Azure Injector Module</h3>
+						<p>
+							The Azure Injector module enables end users of Ignition to select tag data from the Ignition platform to be sent into 
+							the Microsoft Azure cloud infrastructure through the Azure IoT Hub.
+						</p>
+
+						<h3>EFM Emerson ROC Module</h3>
+						<p>
+							Connect to the following device families: Emerson ROC 107 & 800 Series flow computers. EFM supports real-time, alarm, 
+							historical, and event data.
+						</p>
+
+						<h3>MQTT Distributor Module</h3>
+						<p>
+							Adds an MQTT server to the Ignition platform that enables MQTT clients to securely connect, publish, and subscribe to data.
+						</p>
+
+						<h3>MQTT Engine Module</h3>
+						<p>
+							Bidirectionally communicate with edge-of-network devices securely via an MQTT Server. Create one pipeline for all your 
+							IIoT data that increases data throughput and efficiencies.
+						</p>
+
+						<h3>MQTT Recorder Module</h3>
+						<p>
+							The MQTT Recorder Module receives record objects via MQTT/Sparkplug and automatically generates and populates database tables 
+							with records as they are received.
+						</p>
+
+						<h3>MQTT Remote Agent Module</h3>
+						<p>
+							Together with the MQTT Remote Manager Module, the MQTT Remote Agent Module provides the agent services of version control 
+							and updates at the remote device or server level over and MQTT network.
+						</p>
+
+						<h3>MQTT Remote Manager Module</h3>
+						<p>
+							Enable the central management of the version control and updates to Ignition Edge MQTT and the MQTT Transmission Modules 
+							over an MQTT network when combined with the MQTT Remote Agent Module.
+						</p>
+
+						<h3>MQTT Transmission Module</h3>
+						<p>
+							Use Ignition to publish data from the edge of the network by taking Ignition Tag change events and publishes them as 
+							MQTT messages to an MQTT server.
+						</p>
+
+						<div class="centerImg">
+							<img src="images/website_links/cirrus-link.png" alt="Cirrus-Link" />
+						</div>
+					</div>
+				</div>
+			</article>
+			
+			<aside class="container">
+				<h2>Product(s)</h2>
+				<div>
+					<a href="https://www.cirrus-link.com/"><img src="images/website_links/cirrus-link.ico" alt="Cirrus-Link" /></a>
+				</div>
+
+				<h2>Navigation(s)</h2>
+				<div>
+					<a href="index.html"><img src="images/favicons/iiot_favicon.ico" alt="IIOT" /></a>
+					<a href="ignition.html"><img src="images/favicons/ignition_favicon.ico" alt="Ignition" /></a>
+					<a href="oee.html"><img src="images/favicons/oee_favicon.ico" alt="OEE" /></a>
+					<a href="contact.html"><img src="images/favicons/contact_favicon.ico" alt="Contacts" /></a>
+				</div>
+			</aside>
+		</section>
+		<footer>Copyright &copy; Cirrus-Link 2018</footer>
+    </body>
+</html>

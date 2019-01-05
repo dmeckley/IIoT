@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!--
+	Filename: oee.html
+
+	Author: Dustin Meckley
+	Date: 12/10/2018
+	Course: CITC1300-Beginning HTML and CSS Development
+	Assignment: Final Examination Website
+	Purpose: OEE page for the website	
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>OEE</title>
+		<link href="images/favicons/oee_favicon.png" rel="shortcut icon" type="image/png" />
+		<link href="styles/reset.css" rel="stylesheet" />
+		<link href="styles/style.css" rel="stylesheet" />
+
+		<link href="dist/css/lightbox.css" rel="stylesheet" />
+		<link href="dist/slicknav.css" rel="stylesheet" />
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="dist/js/lightbox-plus-jquery.js"></script>
+		<script src="dist/jquery.slicknav.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function(){
+				$('#OEE_menu').slicknav();
+				$( "#accordion" ).accordion();
+			});
+		</script>
+    </head>
+
+    <body>
+		<header>
+			<img src="images/favicons/oee_favicon.png" alt="OEE" />
+			<h1>OEE</h1>
+		</header>
+			
+		<nav>
+			<ul id="OEE_menu">
+				<li><a href="index.html">IIOT</a></li>
+				<li><a href="ignition.html">Ignition</a></li>
+				<li><a href="mqtt.html">MQTT</a></li>
+				<li><a href="oee.html">OEE</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>
+		</nav>
+
+		<section class="wrapper">
+			<div class="container"></div>
+			<article class="container">
+				<div id="accordion">
+					<h1>OEE</h1>
+					<div>
+						<h2>SepaSoft MES/OEE Platform</h2>
+						<p>
+							Tracking overall equipment effectiveness (OEE) and downtime just got easier. 
+							The MES OEE Downtime Module empowers manufacturers to reduce operating costs, 
+							while increasing asset utilization and operating efficiency resulting in 
+							improved profitability. 
+						</p>
+						
+						<div class="intro">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/bvYLKsQfpj0"  
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<h3>Real-Time Efficiency Tracking</h3>
+						<p>
+							Access current production, efficiency and downtime data instantly through 
+							graphical executive and operational dashboards. This empowers management 
+							and operations to respond to real world issues as they are happening today, 
+							not last week. Accomplish continuous improvement, as well as LEAN and Six Sigma 
+							business strategies by communicating efficiently and clearly between all departments.
+						</p>
+
+						<h3>Downtime Data Collection</h3>
+						<p>
+							The module supports automatic, manual collection of downtime reasons, or a combination 
+							of the two. Visually identify and drill down to the top downtime causes that affect your 
+							operating efficiency.
+						</p>
+
+						<h3>Fully Customizable</h3>
+						<p>
+							Because manufacturers have different requirements, the OEE Downtime Module allows you to 
+							modify existing screens, reports, calculations, etc., or create them from scratch for a 
+							fully customizable system, putting you in charge of your data.
+						</p>
+
+						<h3>Mobile MES Access</h3>
+						<p>
+							Access your facility’s overall equipment effectiveness reports from anywhere your mobile 
+							device can travel. Save production staff time by instantly entering down- time reasons, 
+							production scheduling changes, notes, and more, without being tied to a desktop computer.
+						</p>
+
+						<h3>Automatic Data Collection</h3>
+						<p>
+							Improve accuracy of information with automatically recorded data rather than manual entry 
+							and interpre- tation by production staff. As an added benefit, those valuable man hours 
+							can be utilized elsewhere.
+						</p>
+					</div>
+
+					<h1>OEE Modules</h1>
+					<div>
+						<h2>SepaSoft MES/OEE Modules</h2>
+						<p>
+							Sepasoft MES is powered using Ignition® by Inductive Automation, the powerful HMI and SCADA platform providing cross-platform 
+							compatibility, unlimited free clients, robust out-of-the-box SQL database support, and fast installation.
+						</p>
+						<p>
+							Our modules are built on the Ignition® software stack, extending the standard functionality and allowing for a rich and 
+							powerful way to customize the implementation to deliver virtually anything required for your MES solution.
+						</p>
+
+						<div class="centerImg">
+							<a href="images/oee_modules/barcode_scanner.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="Barcode Scanner Module">
+								<img src="images/oee_modules/thumbnails/barcode_scanner_tn.jpg" alt="Barcode Scanner Module" /></a>
+
+							<a href="images/oee_modules/instrument_interface.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="Instrument Interface Module">
+								<img src="images/oee_modules/thumbnails/instrument_interface_tn.jpg" alt="Instrument Interface Module" /></a>
+
+							<a href="images/oee_modules/oee_2.0.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="OEE v2.0 Module">
+								<img src="images/oee_modules/thumbnails/oee_2_tn.jpg" alt="OEE v2.0 Module" /></a>
+
+							<a href="images/oee_modules/recipe_changeover.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="Recipe Changeover Module">
+								<img src="images/oee_modules/thumbnails/recipe_changeover_tn.jpg" alt="Recipe Changeover Module" /></a>
+
+							<a href="images/oee_modules/spc.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="SPC Module">
+								<img src="images/oee_modules/thumbnails/spc_tn.jpg" alt="SPC Module" /></a>
+
+							<a href="images/oee_modules/track_and_trace.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="Track and Trace Module">
+								<img src="images/oee_modules/thumbnails/track_and_trace_tn.jpg" alt="Track and Trace Module" /></a>
+
+							<a href="images/oee_modules/web_services.png" data-lightbox="SepaSoft OEE/MES Modules" data-title="Web Services Module">
+								<img src="images/oee_modules/thumbnails/web_services_tn.jpg" alt="Web Services Module" /></a>
+						</div>
+
+						<h3>Barcode Scanner Module</h3>
+						<p>
+							The Sepasoft Barcode scanner module is a utility module. With Sepasoft Barcode scanner, customers can use barcode scanning 
+							capabilities to facilitate material handling. User can scan badge to sign off on materials, Master Production Records, 
+							Batch Production Records, and other production tasks. Software also includes ability to hide manufacturing records not 
+							in use and added option for customers to include their own logos.
+						</p>
+
+						<h3>Instrument Interface Module</h3>
+						<p>
+							The Sepasoft Instrument Interface Module will let you capture raw textual data from instrument type devices via serial, 
+							text files, OPC devices and more, and enable you to parse out the meaningful values that can be saved to databases or 
+							passed along to other systems.
+						</p>
+						
+						<h3>OEE 2.0 Module</h3>
+						<p>
+							The Sepasoft OEE Downtime Module empowers manufacturers with actionable data that can help managers reduce operating cost, 
+							increase asset utilization and boost operating efficiency that results in improved profitability.
+						</p>
+
+
+						<h3>Recipe Changeover Module</h3>
+						<p>
+							A recipe defines settings and amounts to manufacture a specific product in a consistent manner. It is an essential part of 
+							the production process. Sepasoft Recipe software fits into the Manufacturing Execution System (MES) layer that resides 
+							between the Enterprise Resource Planning (ERP) layer and the plant floor. It provides an efficient means to manage and 
+							select recipes, track variances in recipe values, keep recipes secure, track recipe changes, analyze recipes and generate 
+							recipe reports.
+						</p>
+
+						<h3>SPC Module</h3>
+						<p>
+							The Sepasoft SPC software will help you reduce or eliminate late or missing sample collection, inaccurate sample data and 
+							other issues leading to quality problems. This module delivers your SPC data in real-time to the right people in a 
+							comprehensive format using the flexible control charts and analysis tools.
+						</p>
+
+						<h3>Track and Trace Module</h3>
+						<p>
+							The Sepasoft Track & Trace Module manages your inventory in real time. By adding this module, your system can have the 
+							capability to look up where any product has been in its manufacturing process, and where it is now. It records the start 
+							and end of each production run in real-time and monitors the status of the materials while being consumed.
+						</p>
+
+						<h3>Web Services Module</h3>
+						<p>
+							The new Sepasoft Web Services Module empowers MES software to communicate with other systems using web services over the 
+							web or private network. Easily configure web service operations and data types visually, then invoke web service operations 
+							from the HMI, SCADA or MES system to read data from or write data to ERP or any other system that supports web services. 
+							It shares information as detailed as work orders, schedules, product definitions, and asset information, or as simple as 
+							the weather forecast.
+						</p>
+
+						<div class="centerImg">
+							<img src="images/website_links/sepasoft.png" alt="SepaSoft" />
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<aside class="container">
+				<h2>Product(s)</h2>
+				<div>
+					<a href="https://www.sepasoft.com/"><img src="images/website_links/sepasoft.ico" alt="SepaSoft" /></a>
+				</div>
+
+				<h2>Navigation(s)</h2>
+				<div>
+					<a href="index.html"><img src="images/favicons/iiot_favicon.ico" alt="IIOT" /></a>
+					<a href="ignition.html"><img src="images/favicons/ignition_favicon.ico" alt="Ignition" /></a>
+					<a href="mqtt.html"><img src="images/favicons/mqtt_favicon.ico" alt="MQTT" /></a>
+					<a href="contact.html"><img src="images/favicons/contact_favicon.ico" alt="Contacts" /></a>
+				</div>
+			</aside>
+		</section>
+    	<footer>Copyright &copy; SepaSoft 2018</footer>
+    </body>
+</html>

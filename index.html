@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<!--
+	Filename: index.html
+
+	Author: Dustin Meckley
+	Date: 12/10/2018
+	Course: CITC1300-Beginning HTML and CSS Development
+	Assignment: Final Examination Website
+	Purpose: IIOT page for the website	
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>IIOT</title>
+		<link href="images/favicons/iiot_favicon.png" rel="shortcut icon" type="image/png" />
+		<link href="styles/reset.css" rel="stylesheet" />
+		<link href="styles/style.css" rel="stylesheet" />
+		
+		<link href="dist/slicknav.css" rel="stylesheet" />
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="dist/jquery.slicknav.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function(){
+				$('#IIOT_menu').slicknav();
+				$( "#accordion" ).accordion();
+			});
+		</script>
+    </head>
+
+    <body>
+		<header>
+			<img src="images/favicons/iiot_favicon.png" alt="IIOT" />
+			<h1>IIOT</h1>
+		</header>
+
+		<nav>
+			<ul id="IIOT_menu">
+				<li><a href="index.html">IIOT</a></li>
+				<li><a href="ignition.html">Ignition</a></li>
+				<li><a href="mqtt.html">MQTT</a></li>
+				<li><a href="oee.html">OEE</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>
+		</nav>
+
+		<section class="wrapper">
+			<div class="container"></div>
+			<article class="container">
+				<div id="accordion">
+					<h1>IIoT</h1>
+					<div>
+						<h2>IoT vs IIoT</h2>
+						<p>
+							If you want to compare IIoT vs IoT, we’ll probably need to define the Internet of Things first. 
+							The term refers to the connection of devices (the Things) through the internet so they can collect 
+							and share data without human assistance. IoT devices range from smart thermostats to vehicle systems 
+							to biochip transponders on farm animals. Even people can be outfitted with sensors connected to the internet.
+						</p>
+						<p>
+							The IoT revolution isn’t just benefitting consumers; it’s also being harnessed for industrial purposes – 
+							so much so that it has its own acronym: 
+							<a id="IIoT" href="https://www.winsystems.com/industrial-internet-of-things-iiot/">IIoT (Industrial Internet of Things)</a>. 
+							IIoT is the use of IoT technology for industrial purposes – from gas pumps to HVAC systems to machinery on the factory floor.
+							
+						</p>
+
+						<div class="intro">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/vDJ-ejlGELE" 
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<h3>Benefits of Industrial IoT</h3>
+						<p>
+							The idea of industrial devices exchanging information isn’t new; they’ve been doing it for years. IIoT, however, 
+							brings this to an entirely new level, because it provides a system and standards for universal interconnectivity 
+							over IP (Internet Protocol). IP is the key protocol used to exchange information over the internet, no matter 
+							what type of device is doing the exchanging.
+						</p>
+						<p>
+							Many currently networked industrial devices are closed systems. They can only communicate with other devices that 
+							are on their network and “speak” the same language- i.e. use the same protocols and architecture. By IP-enabling 
+							devices, the potential for interconnection over existing network infrastructure is vastly expanded.
+						</p>
+						<p>
+							IoT “things” aren’t just dumb devices that can be turned on and off remotely, they:
+						</p>
+						<ul>
+							<li>are “smart” devices with their own local logic and processing</li>
+							<li>have protocols for exchanging information with each other</li>
+							<li>send and receive information and commands over a network (including the internet)</li>
+						</ul>
+						<p>
+							IIoT brings the potential to bring machine learning and big data technology into play to bring automation technologies 
+							to a new level of self-contained performance. Think of sensors (pressure, temperature, vibration, flow, and many more), 
+							that are already collecting data, but now that data can be combined with data from other systems and collected, analyzed, 
+							and exchanged in new ways.
+						</p>
+						<p>
+							Use cases range from basic system monitoring and control through developing insights and analytics that change the way 
+							systems and businesses function. Industrial IoT experts report that these technologies will greatly improve quality control, 
+							support sustainable and green practices, and vastly improve supply chain management and efficiency.
+						</p>
+
+						<h3>Making the Connection</h3>
+						<p>
+							Industrial IoT brings alot of potential, but it also comes with substantial challenges. One of the biggest is figuring out 
+							how the millions of existing automated devices can be retrofitted and connected to use industrial IoT. Existing automated 
+							processes use proprietary protocols, different architectures, and have limited networking ability. They tend to be isolated 
+							islands of technology.
+						</p>
+						<p>
+							The Industrial Internet Consortium, a global nonprofit founded in 2014, is addressing this problem. It recently published 
+							the Industrial Internet Connectivity Framework (IICF), a blueprint of connectivity standards and a reference architecture 
+							for designing interoperable solutions.
+						</p>
+						<p>
+							The IICF framework will make it possible for developers to roll out industrial IoT solutions that are compatible and 
+							connectable at a much faster rate.
+						</p>
+						<p>
+							Thanks to the millions of industrial sensors already in place and the development of many new, low-cost wireless sensors, 
+							the industrial internet of things is poised to take off. As it does, it will bring new levels of efficiency and capability 
+							to all levels of industry.
+						</p>
+					</div>
+
+					<h1>IT/OT</h1>
+					<div>		
+						<h2>IT vs OT</h2>
+						<div class="intro">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/7ZnfuFzB-XM" 
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="row">
+							<div class="col-1-2">
+								<h3>IT is dynamic</h3>
+								<p>
+									Comprised of fluid, intertwined technology stacks, IT has a lot of moving parts—which means it also has an 
+									incredible number of exploit variants. From network to compute to application to data and more, IT teams are 
+									responsible for safeguarding every layer in a stack with its own brand of add-on security (e.g., VPN, SEIM, 
+									NGFW, DLP).
+								</p>
+								<p>
+									On top of that, these security teams are caught up in a perpetual game of cat and mouse with attackers who always
+									seem to have the advantage and be at least one step ahead. It’s a never-ending cycle of identifying new viruses, 
+									updating malware signatures, closing security holes, etc.
+								</p>
+							</div>
+							<div class="col-1-2">
+								<h3>OT is deterministic</h3>
+								<p>
+									OT systems are engineered for specific, measured, prescribed actions based on content, and not context. 
+									That’s determinism. Things only happen one way—the way they were designed to act. If given a certain input, 
+									they will always produce a certain output, time and time again. It’s an either/or. For example, you open a 
+									valve or you close a valve. There are no in-betweens.
+								</p>
+								<p>
+									No question, the OT threat landscape is scary, but because of its deterministic environment, the nature of attacks 
+									is not as dynamic as in the IT world—and the primary security focus becomes about ensuring control.
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-1-2">
+								<h3>IT: Data is king</h3>
+								<p>
+									IT is about digital information storage, retrieval, transmission, and manipulation. Most businesses want to ensure smooth 
+									data flow. For example, Amazon wants to be sure identities are verified, that credit cards are working, and that searches 
+									and purchase histories can be used to offer up “you so need this, too” suggestions. None of these crosses over into the 
+									physical realm of process control and manual manipulation.
+								</p>
+							</div>
+							<div class="col-1-2">
+								<h3>OT: Process is king</h3>
+								<p>
+									OT is all about process control, which is why it’s not germane to think about things in the same way you would in the IT 
+									world, where defenses are layered (at times, seemingly ad infinitum) onto technology stacks. Industrial organizations 
+									typically run a small suite of control applications, and maybe a few more to help manage and maintain systems. For the most 
+									part, the environment remains relatively static.
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-1-2">
+								<h3>IT: Gateways are everywhere</h3>
+								<p>
+									More gateways mean a larger attack surface. And considering that 60 percent of network traffic is bots, it’s no wonder 
+									attackers only need to be right once—yet another reason IT guys are one step behind the bad guys. It’s nearly impossible 
+									to keep up.
+								</p>
+							</div>
+							<div class="col-1-2">
+								<h3>OT: Fewer gateways</h3>
+								<p>
+									Fewer gateways, fewer avenues for attackers to pursue. The key is reinforcing armaments at those known gates, moats, 
+									and tunnels from the start.
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-1-2">
+								<h3>IT: Confidentiality is priority #1</h3>
+								<p>
+									In order of importance, priorities are: confidentiality, integrity and availability (the CIA triad). First and foremost, 
+									businesses and consumers expect financial, medical and personal data to remain private.
+								</p>
+							</div>
+							<div class="col-1-2">
+								<h3>OT: Control is priority #1</h3>
+								<p>
+									In OT, an additional priority tops the list, while the rest are flip-flopped. The new order: control, availability, 
+									integrity, and confidentiality. Control equates to safety because, in this environment, loss of control could have dire 
+									consequences. Next is availability (e.g., we expect to have water at the flick of a faucet), then integrity 
+									(e.g., we expect that water to be clean and pure), and finally, confidentiality.
+								</p>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-1-2">
+								<h3>IT: Throughput matters</h3>
+								<p>
+									The amount of data that can be transferredat any given time is a big deal in the IT world, where connected 
+									constituents have gone all Oliver Twist, minus the “please, sir.” That means both bandwidth 
+									(think of this as a multiple-lane highway) and throughput (the number of cars traveling on the highway at any 
+									given time) demands are ever growing.
+								</p>
+							</div>
+							<div class="col-1-2">
+								<h3>OT: Throughput is secondary</h3>
+								<p>
+									The “information highway” infrastructure is less complicated and less congested in OT. If, say, a four-lane highway 
+									were built, it was done so because four lanes were more than adequate to handle the relatively fixed amount of 
+									anticipated traffic. Throughput requirements aren’t changing as quickly or drastically as in the IT space.
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-1-2">
+								<h3>IT: Patch Tuesday</h3>
+								<p>
+									Security patching is so commonplace in IT that vendors have a regular weekly release day. Vulnerabilities are easy for 
+									attackers to find. They’re also often only discovered as a result of an exploit. In fact, because of the dynamic nature of 
+									IT environments, it’s becoming a rarity to find vulnerabilities pre-exploit.
+								</p>
+								<p>
+									The good news for IT is that, once found, vulnerabilities generally have effective patching available within days to 
+									mitigate damage.
+								</p>
+							</div>
+							<div class="col-1-2">
+								<h3>OT: Patch...decade?</h3>
+								<p>
+									No matter what, security cannot make critical infrastructure less available or reliable. In fact, it cannot have any 
+									negative impact—no disruptions, no slow downs—to the realtime and deterministic operation of critical infrastructure.
+								</p>
+								<p>
+									So even if Patch Tuesdays did exist (which they don’t), they wouldn’t be a viable solution. It’s just not feasible 
+									to drop security measures in and expect them to work as they might in IT.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<h1>OEE Formulas</h1>
+					<div>
+						<h2>What Is OEE?</h2>
+						<p>
+							OEE stands for Overall Equipment Effectiveness and is used to monitor manufacturing effectiveness. 
+							The resulting OEE number, represented as a percentage, is generic and allows comparisons across 
+							differing industries. Efficiency is not simply the ratio of machine run time to scheduled time. 
+							Look at the situation of your manufacturing line or process running at half speed with 0 downtime. 
+							This is truly only 50% efficient. Or what if 10% of the product being produced does not meet your 
+							minimum quality and must be reworked. This equates to 90% efficient, which does not take into account 
+							the effort to rework or the losses of raw material. There are three factors, all represented as a 
+							percentage, taken into consideration for the final OEE result: 
+						</p>
+
+						<figure class="centerImg">
+							<img src="images/oee_modules/oee.png" alt="OEE Flow Process" />
+							<figcaption>OEE Flow Process</figcaption>
+						</figure>
+
+						<h3>OEE Availability</h3>
+						<p>
+							OEE Availability is the ratio between the actual runtime and planned production time.  The planned 
+							production time does not included breaks, lunches and other pre-arranged time a production line or 
+							process may be down.
+						</p>
+						<p class="formula">Availability = actual runtime / production time</p>
+
+						<h3>OEE Performance</h3>
+						<p>
+							OEE Performance is the ratio between the actual number of units started (not the number that have been produced) 
+							and the number of units that theoretically can be processed based on the standard rate. The standard rate is the 
+							rate that the equipment is designed for. Performance is not based on the number of units produced, but, on what 
+							the line was designed to process over a given period of time.
+						</p>
+						<p class="formula">Performance = actual number of units started / standard rate * actual runtime</p>
+
+						<h3>OEE Quality</h3>
+						<p>
+							OEE Quality is the ratio between good units produced and the total units that were started.
+						</p>
+						<p class="formula">Quality = good units produced / actual number of units started</p>
+
+						<h2>OEE Formula</h2>
+						<p class="formula">OEE = Availability x Performance x Quality.</p>
+
+						<div class="centerImg">
+							<img src="images/oee_modules/OEE_pie.png" alt="OEE Pie Chart" />
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<aside class="container">
+				<h2>Product(s)</h2>
+				<div>
+					<a href="https://www.inductiveautomation.com/"><img src="images/website_links/inductive_automation.ico" alt="Inductive Automation" /></a>
+					<a href="https://www.cirrus-link.com/"><img src="images/website_links/cirrus-link.ico" alt="Cirrus-Link" /></a>
+					<a href="https://www.sepasoft.com/"><img src="images/website_links/sepasoft.ico" alt="SepaSoft" /></a>
+				</div>
+
+				<h2>Navigation(s)</h2>
+				<div>
+					<a href="ignition.html"><img src="images/favicons/ignition_favicon.ico" alt="Ignition" /></a>
+					<a href="mqtt.html"><img src="images/favicons/mqtt_favicon.ico" alt="MQTT" /></a>
+					<a href="oee.html"><img src="images/favicons/oee_favicon.ico" alt="OEE" /></a>
+					<a href="contact.html"><img src="images/favicons/contact_favicon.ico" alt="Contacts" /></a>
+				</div>
+			</aside>
+		</section>
+
+    	<footer>
+			Copyright &copy; WinSystems 2018 <br />
+			Copyright &copy; Novotek 2018 <br />
+			Copyright &copy; SepaSoft 2018 <br />
+		</footer>
+    </body>
+</html>
